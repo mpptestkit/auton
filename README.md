@@ -69,4 +69,3 @@ It streams SSE events:
 
 - `devnet` - default, fastest airdrop availability
 - `testnet` - also supported, same flow
-

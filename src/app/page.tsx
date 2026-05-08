@@ -54,7 +54,7 @@ function Hero() {
         </p>
 
         <p className="text-zinc-400 text-base leading-relaxed max-w-2xl mb-10">
-          LLM-powered agents browse, reason, and act — but today they
+          LLM-powered agents browse, reason, and act - but today they
           can&apos;t pay for the premium data they need without a human handing
           them an API key. HTTP 402 closes that gap. Each agent session
           generates an ephemeral Solana keypair, funds it, and pays per query.
@@ -230,7 +230,7 @@ function CodeSection() {
                 <span className="text-zinc-300">{` res.`}</span>
                 <span className="text-emerald-300">{`json`}</span>
                 <span className="text-zinc-300">{`();\n`}</span>
-                <span className="text-zinc-600">{`// ↑ That's it. Wallet, faucet, payment — all automatic.`}</span>
+                <span className="text-zinc-600">{`// ↑ That's it. Wallet, faucet, payment - all automatic.`}</span>
               </pre>
             </div>
           </div>
@@ -245,7 +245,7 @@ function CodeSection() {
             </div>
             <div className="p-4">
               <pre className="font-mono text-xs text-zinc-300 whitespace-pre-wrap leading-relaxed overflow-auto">
-                <span className="text-zinc-600">{`// Server — Express / Next.js API route\n`}</span>
+                <span className="text-zinc-600">{`// Server - Express / Next.js API route\n`}</span>
                 <span className="text-sky-400">{`import`}</span>
                 <span className="text-zinc-300">{` { `}</span>
                 <span className="text-emerald-300">{`mppGate`}</span>

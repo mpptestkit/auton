@@ -186,9 +186,14 @@ function ResultCard({
   result: ResultInfo;
   signature: string | null;
 }) {
-  const explorerUrl = signature
-    ? `https://explorer.solana.com/tx/${signature}?cluster=${result.network}`
-    : null;
+  const [copied, setCopied] = useState(false);
+
+  const copySig = () => {
+    if (!signature) return;
+    navigator.clipboard.writeText(signature);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   return (
     <div className="mt-4 rounded-lg border border-zinc-800 bg-zinc-900/60 overflow-hidden">
@@ -210,23 +215,26 @@ function ResultCard({
         </span>
         <span className="text-xs text-zinc-600">·</span>
         <span className="text-xs text-zinc-500">{result.network}</span>
-        {explorerUrl && (
+        {signature && (
           <>
             <span className="text-xs text-zinc-600">·</span>
-            <span className="font-mono text-[11px] text-zinc-600">
-              {signature!.slice(0, 8)}…{signature!.slice(-6)}
+            <span className="font-mono text-[11px] text-zinc-600 truncate max-w-[120px]">
+              {signature.slice(0, 8)}…{signature.slice(-6)}
             </span>
-            <a
-              href={explorerUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 text-xs text-zinc-500 hover:text-zinc-200 transition-colors ml-auto"
+            <button
+              onClick={copySig}
+              className="flex items-center gap-1 text-xs text-zinc-600 hover:text-zinc-400 transition-colors"
+              title="Copy signature"
             >
-              View on Explorer
-              <ExternalLink className="w-3 h-3" />
-            </a>
+              {copied ? (
+                <span className="text-green-400 text-[10px]">Copied</span>
+              ) : (
+                <ExternalLink className="w-3 h-3" />
+              )}
+            </button>
           </>
         )}
+        <span className="text-xs text-zinc-700 ml-auto italic">simulated · devnet</span>
       </div>
     </div>
   );
