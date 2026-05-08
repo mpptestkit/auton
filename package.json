@@ -1,0 +1,27 @@
+{
+  "name": "auton",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 5174",
+    "build": "next build",
+    "start": "next start -p 5174"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "lucide-react": "^0.400.0",
+    "@solana/web3.js": "^1.95.4",
+    "buffer": "^6.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "postcss": "^8",
+    "tailwindcss": "^3",
+    "typescript": "^5"
+  }
+}
