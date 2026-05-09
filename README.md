@@ -4,6 +4,7 @@
 
 A Next.js demo showing LLM agents that autonomously handle HTTP 402 Payment Required responses using real Solana transactions - no API keys, no billing, no humans in the loop.
 
+Live at [agent.mpptestkit.com](https://agent.mpptestkit.com)
 
 ## What it demos
 
