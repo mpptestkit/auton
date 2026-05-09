@@ -206,7 +206,7 @@ function ResultCard({ result, signature }: { result: ResultInfo; signature: stri
         <div className="flex items-center gap-2">
           <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
           <span className="text-xs font-mono text-emerald-400 font-semibold">
-            200 OK — Agent received premium data
+            200 OK - Agent received premium data
           </span>
         </div>
         <div className="flex items-center gap-2 text-[10px] font-mono text-zinc-600">
@@ -481,7 +481,7 @@ export function AutonDemo() {
             <span className="text-zinc-600">(url);</span>
           </pre>
           <p className="text-[10px] text-zinc-700 mt-1.5 leading-snug">
-            One call. Wallet, airdrop, payment, retry — all automatic.
+            One call. Wallet, airdrop, payment, retry - all automatic.
           </p>
         </div>
       </div>
@@ -526,7 +526,7 @@ export function AutonDemo() {
                     Select a query and click Run Agent
                   </p>
                   <p className="text-[10px] font-mono text-zinc-800 mt-1">
-                    Streams live — wallet · airdrop · 402 · payment · 200
+                    Streams live - wallet · airdrop · 402 · payment · 200
                   </p>
                 </div>
               </div>

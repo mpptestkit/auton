@@ -134,7 +134,7 @@ export async function POST(req: NextRequest) {
         send(controller, { ...event, ts: Date.now() - startTime });
       };
 
-      // Step 1: INIT — keypair generation
+      // Step 1: INIT - keypair generation
       emit({ type: "init", message: "Generating ephemeral Solana keypair..." });
       await sleep(200);
 
@@ -146,7 +146,7 @@ export async function POST(req: NextRequest) {
       });
       await sleep(150);
 
-      // Step 2: FUND — airdrop
+      // Step 2: FUND - airdrop
       emit({
         type: "fund",
         message: `Requesting airdrop from ${network} faucet...`,
